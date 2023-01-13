@@ -2,8 +2,8 @@
 #export SNDCPY_APK="/home/pimania/uninstallablePrograms/sndcpy/sndcpy.apk"
 #/usr/bin/expect -f /home/pimania/uninstallablePrograms/sndcpy/script.exp &
 
-/home/pimania/Dev/sndcpy/connectIfNotRunning.sh 192.168.0.20:34909
-scrcpy --stay-awake -S --shortcut-mod lctrl --window-width 420 --window-height 900
+scrcpy --tcpip
+scrcpy --select-tcpip --stay-awake --shortcut-mod lctrl --window-width 1920 --window-height 1080 --window-x=0 --window-y=0
 
 #if the above doesn't work, try:
 #sudo apt install ucommon-utils
